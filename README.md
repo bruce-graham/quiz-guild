@@ -12,13 +12,13 @@ Vite (French word for "quick", pronounced /vit/, like "veet") is a build tool th
 
 ## To start Vite/React app:
 
-pnpm install
+pnpm install  
 pnpm run dev
 
-npm install
+npm install  
 npm run dev
 
-yarn install
+yarn install  
 yarn run dev
 
 ---
