@@ -1,6 +1,16 @@
 # React + Vite
 
-To start Vite/React app, run one of the following:
+---
+
+Vite (French word for "quick", pronounced /vit/, like "veet") is a build tool that aims to provide a faster and leaner development experience for modern web projects. It consists of two major parts:
+
+ - A dev server that provides rich feature enhancements over native ES modules, for example extremely fast Hot Module Replacement (HMR).
+
+ - A build command that bundles your code with Rollup, pre-configured to output highly optimized static assets for production.
+
+---
+
+## To start Vite/React app:
 
 pnpm install
 pnpm run dev
@@ -13,7 +23,11 @@ yarn run dev
 
 ---
 
-Compatibility Note
+## Documentation
+
+For full documentation, visit [vitejs.dev/](https://vitejs.dev/).
+
+## Compatibility Note
 
 Vite requires Node.js version 18+. 20+. However, some templates require a higher Node.js version to work, please upgrade if your package manager warns about it.
 
