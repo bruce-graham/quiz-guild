@@ -1,5 +1,12 @@
 # React + Vite
 
+To start Vite/React app, run one of the following:
+
+pnpm run dev
+npm run dev
+yarn run dev
+
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
