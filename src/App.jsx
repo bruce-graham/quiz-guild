@@ -1,33 +1,25 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { CategoryOne } from './components'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [currentView, setCurrentView] = useState('')
+
+  let view;
+
+  if (currentView === 'Category 1') {
+    view = <CategoryOne setCurrentView={setCurrentView}/>
+  }
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {!view ? 
+        <div>            
+          <h1>Quiz Guild</h1>
+          <button onClick={() => setCurrentView('Category 1')}>Category 1</button>
+          <button>Category 2</button>
+        </div> : 
+        view}
     </>
   )
 }
