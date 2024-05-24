@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       {!view ? 
-        <div>            
+        <div className='flex flex-col bg-gray-200 h-96 p-4 rounded-lg border-2 border-black'>
           <h1>Quiz Guild</h1>
           <button onClick={() => setCurrentView('Category 1')}>Category 1</button>
           <button>Category 2</button>
